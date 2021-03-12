@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+/* base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand";
+  color: #333;
+  font-size: 62.5%;
+  h1{
+      font-size: 2.5rem;
+  }
+  h2{
+    font-size: 2rem;
+}
+ 
+  p{
+      font-size: 1.5rem;
+      display: inline;
+  }
+}
+.navbar {
+  padding: 2rem;
+  display: flex;
+  align-items:center;
+  justify-content: space-around;
+  max-width: 100vw;
+  margin: 0 auto;
+  border-bottom: 1px solid #f2f2f2;
+}
+.navbar h1 {
+  color: #5a10e6;
+}
+.navbar .links {
+  margin-left: auto;
+}
+.navbar a {
+  margin-left: 1.5rem;
+  text-decoration: none;
+  padding: 0.6rem;
+}
+.navbar a:hover {
+  color: #7d17dd;
+  
+}
+.content {
+  max-width: 500px;
+  margin: 4rem auto;
+  padding: 2rem;
+}
+
+#signbox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 80vh;
+    background-color: rgb(204, 202, 202);
+    
+    .flex-wrap{
+        
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 3rem;
+        border-radius: 0.8rem;
+        box-shadow: 0.3rem 0.6rem 0.4rem rgba(51, 51, 51, 0.719);
+        form{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+
+            label{
+                font-size: 2rem;
+                font-weight: 700;
+                margin-bottom: 0.4rem;
+            }
+            input{
+                border: 1px solid rgb(41, 41, 41);
+                width: 30rem;
+                padding:2rem 0.5rem 2rem 0.2rem;
+                margin-top: 0.5rem;
+                margin-top: 0.5rem;
+                font-size: 1.4rem;
+                border-radius: 0.5rem;
+            }
+            button{
+                padding:2rem 6rem;
+                font-size: 1.8rem;
+                font-weight: 800;
+                background-color: #7d17dd;
+                color: azure;
+                border: none;
+                margin-top: 1.3rem;
+                border-radius: 0.5rem;
+            }
+            #google-btn{
+
+                padding:2rem 6rem;
+                font-size: 1.8rem;
+                font-weight: 800;
+                background-color: #e02443;
+                color: azure;
+                border: none;
+                margin-top: 1.3rem;
+                border-radius: 0.5rem;
+            }
+            
+        }
+    }
+}
+
+#main-app{
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+  text-align: center;
+  h1{
+    font-size: 4rem;
+    font-weight: 700;
+  }
+  .box{
+    margin-top: 2rem;
+    background: linear-gradient(to right, rgba(15, 172, 235, 0.87),rgba(173, 15, 204, 0.87));
+    width: 70vw;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2rem;
+    box-shadow: 0.3rem 0.6rem 0.4rem rgba(51, 51, 51, 0.719);
+
+  }
+  .input {
+    border: 1px solid #333;
+    border-radius: .3em;
+    padding:2rem 0.5rem 2rem 0.2rem;
+    width: 20vw;
+    font-size: 2.5rem;
+    font-weight: 600;
+    background-color: #eee3e3;
+  }
+  
+  select {
+    margin-left: .5rem;
+    font-size: 1.4rem;
+    font-weight: 800;
+    padding:2rem 0.5rem 2rem 0.2rem;
+    box-shadow: none;
+    border-radius: 1rem;
+    background-color: #eee3e3;
+  }
+  option{
+    font-size: 1.5rem;
+  }
+  
+  .equals {
+    font-weight: bold;
+    font-size: 4rem;
+    color: #f2f2f2;
+  }
+
+}
+@media only screen and (max-width: 600px) {
+  .navbar h1{
+    font-size: 2rem;
+  }
+  #main-app{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    flex-direction: column;
+    text-align: center;
+    h1{
+      font-size: 3rem;
+      font-weight: 700;
+    }
+    .box{
+      margin-top: 2rem;
+      background: linear-gradient(to right, rgba(15, 172, 235, 0.87),rgba(173, 15, 204, 0.87));
+      width: 80vw;
+      height: 40vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      border-radius: 2rem;
+      box-shadow: 0.3rem 0.6rem 0.4rem rgba(51, 51, 51, 0.719);
+  
+    }
+    .input {
+      border: 1px solid #333;
+      border-radius: .3em;
+      padding:2rem 0.5rem 2rem 0.2rem;
+      width: 50%;
+      font-size: 2rem;
+      font-weight: 600;
+      background-color: #eee3e3;
+    }
+    
+    select {
+      margin-left: .5rem;
+      font-size: 1.4rem;
+      font-weight: 800;
+      padding:2rem 0.5rem 2rem 0.2rem;
+      box-shadow: none;
+      border-radius: 1rem;
+      background-color: #eee3e3;
+    }
+    option{
+      font-size: 1.5rem;
+    }
+    
+    .equals {
+      font-weight: bold;
+      font-size: 4rem;
+      color: #f2f2f2;
+    }
+  
+  }
+}
